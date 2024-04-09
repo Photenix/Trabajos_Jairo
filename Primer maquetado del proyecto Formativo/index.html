@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Nova</title>
+    <script type="module" crossorigin src="/assets/main-CH4zHrOh.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-BepBNHtW.css">
+  </head>
+  <body>
+
+    <dialog id="info-change">
+      <form method="dialog">
+        <label for="name-change">Nombres</label>
+        <input type="text" name="name-change" id="name-change">
+        <label for="last-name-change">Apellidos</label>
+        <input type="text" name="name-change" id="last-name-change">
+        <fieldset>
+          <legend>Permisos</legend>
+          <label for="create-change">Crear</label>
+          <input type="checkbox" name="create" id="create-change">
+
+          <label for="update">Actualizar</label>
+          <input type="checkbox" name="update" id="update-change">
+          
+          <label for="delete">Borrar</label>
+          <input type="checkbox" name="delete" id="delete-change">
+        </fieldset>
+
+        <button>Completar</button>
+      </form>
+    </dialog>
+
+    <div id="app">
+      <nav class="main-navbar">
+        <header class="navbar-header">
+          <img src="logo.jpg" alt="logo" title="logo">
+        </header>
+        <div class="options-main">
+          <details name="options" open>
+            <summary>Ventas</summary>
+            <ul>
+              <li>Produtos</li>
+              <li>Devoluciones</li>
+            </ul>
+          </details>
+
+          <details name="options">
+            <summary>Compras</summary>
+            <ul>
+              <li>Produtos</li>
+              <li>Consulta</li>
+              <li>Informes</li>
+            </ul>
+          </details>
+
+          <details name="options">
+            <summary>Roles</summary>
+            <ul>
+              <li>Informacion</li>
+              <li>Tipos</li>
+            </ul>
+          </details>
+        </div>
+      </nav>
+
+      <main class="information">
+        <header class="information-header">
+          <h2>Usuarios</h2>
+        </header>
+
+        <div class="information-table">
+          <table>
+            <thead>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Crear</th>
+              <th>Actualizar</th>
+              <th>Borrar</th>
+              <th>Opciones</th>
+            </thead>
+            <tbody id="information-rows">
+              <tr>
+                <td>Juan</td>
+                <td>Pino</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>
+                  <i class="bi bi-trash"></i>
+                  <i class="bi bi-plus-circle"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <form action="/" method="get" class="new-item" id="new-item">
+            <label for="name">Nombre</label>
+            <input type="text" placeholder="Nombre" id="name" name="name" required>
+            
+            <fieldset>
+              <legend>Permisos</legend>
+              <label for="create">Crear</label>
+              <input type="checkbox" name="create" id="create">
+
+              <label for="update">Actualizar</label>
+              <input type="checkbox" name="update" id="update">
+              
+              <label for="delete">Borrar</label>
+              <input type="checkbox" name="delete" id="delete">
+            </fieldset>
+            <input type="submit" value="Crear">
+          </form>
+        </div>
+
+      </main>
+    </div>
+  </body>
+</html>
